@@ -1,0 +1,46 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - hello
+    - hi
+    - hey there
+    - good morning
+
+- intent: goodbye
+  examples: |
+    - bye
+    - see you later
+    - goodbye
+
+- intent: get_recipe
+  examples: |
+    - I want the recipe for [Aloo Palak](recipe_name)
+    - Give me the recipe for [Chole Bhature](recipe_name)
+    - How do you make [Paneer Tikka](recipe_name)?
+    - Show me how to make [Rajma](recipe_name)
+
+- intent: list_ingredients
+  examples: |
+    - What are the ingredients for [Aloo Palak](recipe_name)?
+    - Ingredients for [Palak Paneer](recipe_name)?
+    - List ingredients of [Chole](recipe_name)
+
+- intent: ask_method
+  examples: |
+    - How do I cook [Aloo Palak](recipe_name)?
+    - Steps to make [Paneer Butter Masala](recipe_name)
+    - Tell me the method for [Rajma](recipe_name)
+
+- intent: next_step
+  examples: |
+    - next step
+    - what's next
+    - continue
+    - go on
+
+- intent: thank_you
+  examples: |
+    - thanks
+    - thank you
+    - that's helpful

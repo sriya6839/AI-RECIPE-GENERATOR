@@ -1,0 +1,33 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - get_recipe
+  - list_ingredients
+  - ask_method
+  - next_step
+  - thank_you
+
+entities:
+  - recipe_name
+
+slots:
+  recipe_name:
+    type: text
+    influence_conversation: true
+
+responses:
+  utter_greet:
+    - text: "Hey there! 👋 I can help you with recipes. Just tell me what you're looking for!"
+
+  utter_goodbye:
+    - text: "Goodbye! Happy cooking! 🍳"
+
+  utter_thank_you:
+    - text: "You're welcome! 😊 Let me know if you need another recipe."
+
+actions:
+  - action_get_recipe
+  - action_list_ingredients
+  - action_ask_method
